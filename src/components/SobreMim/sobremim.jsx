@@ -1,4 +1,3 @@
-import './style.css'
 import { DivAboutMe, Paragraph, Title } from './style'
 
 

@@ -11,7 +11,7 @@ function Projetos(){
             <h3 className='titulo-projects'>Projects</h3>
             <Swiper>
                 {projetos.map((item)=>(
-                    <SwiperSlide key={item}>
+                    <SwiperSlide key={item.id}>
                        <img src={item.image} alt="" />
                     </SwiperSlide>
                 ))}
