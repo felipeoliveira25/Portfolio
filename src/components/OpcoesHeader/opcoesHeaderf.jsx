@@ -1,4 +1,5 @@
-import { Lista, Opcao, OpcaoContato } from './style'
+import { Lista, Opcao } from './style'
+import { Botao } from '../Botao'
 
 
 
@@ -8,7 +9,7 @@ function OpcoesHeader(){
             <Opcao>Home</Opcao>
             <Opcao>Projects</Opcao>
             <Opcao>Skills</Opcao>
-            <OpcaoContato>Contact</OpcaoContato>
+            <Botao cor="#252728">Contact</Botao>
         </Lista>
     )
 }

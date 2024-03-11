@@ -1,17 +1,28 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import { createGlobalStyle } from 'styled-components'
 
-import {register} from 'swiper/element/bundle'
+const GlobalStyle = createGlobalStyle`
+body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #041F31;
+  scroll-behavior: smooth;
+} 
 
-register();
-import 'swiper/css'
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+li{
+  list-style: none;
+ }
+`
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <GlobalStyle/>
     <App />
   </React.StrictMode>,
 )

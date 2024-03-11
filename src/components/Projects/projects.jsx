@@ -1,107 +1,98 @@
-import './style.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
+import { ProjetosContainer, Slides, CardProjeto, Imagem, Descricao, Botoes, Tags, BotoesContainer } from './style'
+import { Titulo } from '../Titulo'
+import { Botao } from '../Botao'
+import { useState, useEffect } from 'react'
+import {Navigation, Pagination, Scrollbar} from 'swiper/modules'
+
+import {register} from 'swiper/element/bundle'
+
+register();
+import 'swiper/css'
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+
+
 function Projetos(){
 
+    const [slidePerView, setSlidePerView] = useState(4)
     const projetos = [
-        {id:'1', image: '/public/images/img-behouse.png'},
-        {id: '2', image: '/public/images/img-behouse.png'}
+        {id:'1', image: 'images/img-behouse.png', titulo:'BeHouse', tags:['HTML', 'CSS', 'JavaScript'],  links: ['https://github.com/felipeoliveira25/BeHouse', 'https://be-house.vercel.app/']},
+        {id:'2', image: 'images/img-acerta-num.png', titulo: 'Número Secreto', tags:['HTML', 'CSS', 'JavaScript', 'Spech API']},
+        {id:'3', image:'images/img-dash.png', titulo: 'Dashboard React', tags:['React', 'Props', 'Router Dom'], links:['https://github.com/felipeoliveira25/dashboard-react', 'https://dashboard-react-ashen.vercel.app/']},
+        {id:'4', image:'images/img-dash.png', titulo: 'Dashboard React', tags:['React', 'Props', 'Router Dom'],  links:['https://github.com/felipeoliveira25/dashboard-react', 'https://dashboard-react-ashen.vercel.app/']},
+        {id:'5', image:'images/img-dash.png', titulo: 'Dashboard React', tags:['React', 'Props', 'Router Dom'], links:['https://github.com/felipeoliveira25/dashboard-react', 'https://dashboard-react-ashen.vercel.app/']},
+        {id:'6', image:'images/img-dash.png', titulo: 'Dashboard React', tags:['React', 'Props', 'Router Dom'], links:['https://github.com/felipeoliveira25/dashboard-react', 'https://dashboard-react-ashen.vercel.app/']},
+        
+        
     ]
+    
+    
+
+    useEffect(()=> {
+        function handleResize(){
+            if(window.innerWidth < 800){
+                setSlidePerView(2)
+            }else{
+                setSlidePerView(4)
+            }
+        }
+
+        handleResize();
+
+        window.addEventListener("resize", handleResize)
+
+        return () => {
+            window.removeEventListener("resize", handleResize)
+        }
+    }, [])
     return(
-        <div className='div-projetos'>
-            <h3 className='titulo-projects'>Projects</h3>
-            <Swiper>
-                {projetos.map((item)=>(
-                    <SwiperSlide key={item.id}>
-                       <img src={item.image} alt="" />
-                    </SwiperSlide>
-                ))}
+        <ProjetosContainer>
+            <Titulo >Projects</Titulo>
+            <Slides>
+            <Swiper
+                modules={[Navigation, Pagination, Scrollbar]}
+               slidesPerView={slidePerView}
+               pagination={{clickable: true}}
+               scrollbar={{ draggable: true }}
+               spaceBetween={10}
+               slidesPerGroup={1}
+               grabCursor={true}
+               centeredSlides={false}
+               
+               
+               
+            >  
+            {projetos.map((projeto)=>(
+                            <SwiperSlide key={projeto.id} >
+                                <CardProjeto>
+                                    <Imagem src={projeto.image} alt="" />
+                                    <Titulo marginBottom="0" marginLeft="10px">{projeto.titulo}</Titulo>
+                                    <Tags>
+                                        {projeto.tags && projeto.tags.map((tag, index)=>(
+                                            <Botao cor="#252728" padding="5px" fontSize="13px" key={index}>{tag}</Botao>
+                                        ))}
+                                    </Tags>
+                                    <Descricao>{projeto.descricao}</Descricao>
+                                    <BotoesContainer>
+                                            <Botoes>
+                                                  {projeto.links && projeto.links.map((link, index)=>(
+                                                    <Botao cor="#252728" padding="5px" fontSize="13px" href={link} key={index}>
+                                                        {index === 0 ? 'GitHub': 'Vercel'}
+                                                    </Botao>
+                                                 ))}
+                                            </Botoes>
+                                    </BotoesContainer>
+
+                                </CardProjeto>
+                             </SwiperSlide>  
+                         ))}
             </Swiper>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            {/* <ul className='projetos'>
-                <li className='projeto'>
-                    <img src="/public/images/img-behouse.png" alt="" />
-                    <h3 className='projeto-titulo'>BeHouse</h3>
-                    <ul className='projeto-tags'>
-                        <li className='tag'>HTML</li>
-                        <li className='tag'>CSS</li>
-                        <li className='tag'>JavaScript</li>
-                    </ul>
-                    <p className='projeto-descricao'>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </p>
-                    <div className='projeto-btns'>
-                        <section className='btn'>
-                            <a href="https://be-house.vercel.app/">Deploy</a>
-                        </section>
-                        <section className='btn'>
-                            <a href="https://github.com/felipeoliveira25/BeHouse">Repositório</a>
-                        </section>
-                        
-                        
-                    </div>
-                </li>
-
-                <li className='projeto'>
-                    <img src="/public/images/img-behouse.png" alt="" />
-                    <h3 className='projeto-titulo'>BeHouse</h3>
-                    <ul className='projeto-tags'>
-                        <li className='tag'>HTML</li>
-                        <li className='tag'>CSS</li>
-                        <li className='tag'>JavaScript</li>
-                    </ul>
-                    <p className='projeto-descricao'>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </p>
-                    <div className='projeto-btns'>
-                        <section className='btn'>
-                            <a href="https://be-house.vercel.app/">Deploy</a>
-                        </section>
-                        <section className='btn'>
-                            <a href="https://github.com/felipeoliveira25/BeHouse">Repositório</a>
-                        </section>
-                        
-                        
-                    </div>
-                </li>
-
-                
-
-                
-            </ul> */}
-        </div>
+            </Slides>
+           
+        </ProjetosContainer>
     )
 }
 

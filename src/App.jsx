@@ -1,21 +1,22 @@
-import './App.css'
 import Header from './components/Header/header'
 import DescricaoInicial from './components/DescricaoInicial/descricaoinicial'
 import SobreMim from './components/SobreMim/sobremim'
 import Projetos from './components/Projects/projects'
+import styled from 'styled-components'
 
-
+const AppContainer = styled.div`
+`
 
 
 function App(){
   return (
     
-    <div className='App'>
+    <AppContainer>
       <Header/>
       <DescricaoInicial/>
       <SobreMim/>
       <Projetos/>
-    </div>
+    </AppContainer>
    
   )
 }

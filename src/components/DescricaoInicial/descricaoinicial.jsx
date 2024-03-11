@@ -1,4 +1,5 @@
-import { DivInicial, DivTextos, MeuNome, TituloProfissao, Descricao, BotaoContato, DivImg, ImagemBanner, ImagemSeta } from './style'
+import { DivInicial, DivTextos, MeuNome, TituloProfissao, Descricao, DivImg, ImagemBanner, ImagemSeta } from './style'
+import { Botao } from '../Botao'
 
 
 function DescricaoInicial(){
@@ -10,7 +11,7 @@ function DescricaoInicial(){
                 <Descricao>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi suscipit assumenda voluptatem. Reprehenderit ipsum enim tempore mollitia iusto rem a consequatur quam repellat voluptas! Dolorem ullam harum nam quod?
                 </Descricao>
-                <BotaoContato>Contact Me</BotaoContato>
+                <Botao cor="#252728">Contact Me</Botao>
             </DivTextos>
                 
            
