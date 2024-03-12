@@ -11,7 +11,7 @@ function DescricaoInicial(){
                 <Descricao>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi suscipit assumenda voluptatem. Reprehenderit ipsum enim tempore mollitia iusto rem a consequatur quam repellat voluptas! Dolorem ullam harum nam quod?
                 </Descricao>
-                <Botao cor="#252728">Contact Me</Botao>
+                <Botao cor="#31363F">Entre em Contato</Botao>
             </DivTextos>
                 
            

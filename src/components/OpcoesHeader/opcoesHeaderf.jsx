@@ -7,9 +7,9 @@ function OpcoesHeader(){
     return(
         <Lista>
             <Opcao>Home</Opcao>
-            <Opcao>Projects</Opcao>
+            <Opcao>Projetos</Opcao>
             <Opcao>Skills</Opcao>
-            <Botao cor="#252728">Contact</Botao>
+            <Botao cor="#31363F">Contato</Botao>
         </Lista>
     )
 }

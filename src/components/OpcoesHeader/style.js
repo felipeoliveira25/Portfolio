@@ -6,7 +6,7 @@ export const Lista = styled.ul`
     display: flex;
     list-style: none;
     font-family: "Montserrat", sans-serif;
-    color: #BDEBEA;
+    color: #EEEEEE;
     gap: 70px;
     justify-content: center;
     align-items: center;
@@ -17,6 +17,6 @@ export const Opcao = styled.li`
     font-weight: 400;
 
     &:hover{
-        border-bottom: 1px solid #70cfce ;
+        border-bottom: 1px solid #76ABAE ;
     }
 `

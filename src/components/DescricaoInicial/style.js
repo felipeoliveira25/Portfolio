@@ -19,7 +19,7 @@ export const DivTextos = styled.div`
 export const MeuNome = styled.h1`
     font-family: "Montserrat", sans-serif;
     font-size: 4.5rem;
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,171,208,1) 0%, rgba(9,9,121,1) 0%, rgba(5,179,136,1) 0%);
+    background: #76ABAE;
     background-clip: text;
     color: transparent;
     margin-top: -10px;
@@ -29,37 +29,20 @@ export const MeuNome = styled.h1`
 export const TituloProfissao = styled.p`
     font-family: "Tinos", serif;
     font-size: 1.25rem;
-    color: #D7E5EC;
+    color: #EEEEEE;
     margin-top: -2.1rem;
     cursor: pointer;
 `
 
 export const Descricao = styled.p`
-    color: #BDEBEA;
+    color: #EEEEEE;
     font-family: "Montserrat", sans-serif;
     margin-top: -0.7rem;
     font-size: 1rem;
     margin-bottom: 1.9rem;
 `
 
-export const BotaoContato = styled.a`
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,171,208,1) 0%, rgba(9,9,121,1) 0%, rgba(5,179,136,1) 0%);
-    border-radius: 6px;
-    border: none;
-    padding: 10px;
-    color: #252728;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
 
-    &:hover{
-        box-shadow: rgba(5,179,136,1)  3px 2px 10px 0px, rgba(5,179,136,1) -3px -2px 10px 0px;
-
-    }
-`
 
 export const DivImg = styled.div`
 
