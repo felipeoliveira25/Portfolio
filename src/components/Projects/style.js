@@ -24,10 +24,17 @@ export const CardProjeto = styled.div`
     //background: #15253E;
     //background: #3405a3;
     background: #010e16;
-   
+   margin-top:20px;
     border-radius: 15px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     height:18.75rem;
+
+    &:hover{
+        transform: translateY(-5px);
+        transition: all;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
     
 `
 export const Imagem = styled.img`
