@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const Botao = styled.a`
-    background-color: ${props => props.backgroundColor || '#76ABAE'};
+    background-color: ${props => props.backgroundColor || '#700F5A0'};
     border-radius: 5px;
     border: none;
     margin: ${props => props.margin};
