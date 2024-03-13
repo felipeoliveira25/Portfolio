@@ -19,7 +19,7 @@ export const DivTextos = styled.div`
 export const MeuNome = styled.h1`
     font-family: "Montserrat", sans-serif;
     font-size: 4.5rem;
-    background: #76ABAE;
+    background: #5222D0;
     background-clip: text;
     color: transparent;
     margin-top: -10px;
@@ -29,15 +29,15 @@ export const MeuNome = styled.h1`
 export const TituloProfissao = styled.p`
     font-family: "Tinos", serif;
     font-size: 1.25rem;
-    color: #EEEEEE;
+    color: #151717;
     margin-top: -2.1rem;
     cursor: pointer;
 `
 
 export const Descricao = styled.p`
-    color: #EEEEEE;
+    color: #1F2626;
     font-family: "Montserrat", sans-serif;
-    margin-top: -0.7rem;
+    margin-top: -2rem;
     font-size: 1rem;
     margin-bottom: 1.9rem;
 `
@@ -45,7 +45,10 @@ export const Descricao = styled.p`
 
 
 export const DivImg = styled.div`
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem
 `
 export const ImagemBanner = styled.img`
 

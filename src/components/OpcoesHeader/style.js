@@ -6,7 +6,7 @@ export const Lista = styled.ul`
     display: flex;
     list-style: none;
     font-family: "Montserrat", sans-serif;
-    color: #EEEEEE;
+    color: #1F2626;
     gap: 70px;
     justify-content: center;
     align-items: center;
@@ -14,9 +14,13 @@ export const Lista = styled.ul`
 export const Opcao = styled.li`
     cursor: pointer;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
 
     &:hover{
-        border-bottom: 1px solid #76ABAE ;
+        border-bottom: 1px solid #5222D0 ;
     }
+`
+
+export const BotaoDarkMode = styled.input`
+
 `

@@ -9,7 +9,7 @@ body{
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  background-color: #222831;
+  background-color: #FAFAFA;
   scroll-behavior: smooth;
 } 
 

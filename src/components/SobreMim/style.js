@@ -12,19 +12,19 @@ export const DivAboutMe = styled.div`
 
 export const Title = styled.h3`
     font-size: 1.5rem;
-    color: #EEEEEE;
+    color: #151717;
     font-family: "Montserrat", sans-serif;
-    margin-left: 1.9rem;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     cursor: pointer;
+    width:60%;
 `
 
 export const Paragraph = styled.p`
     width: 52.1rem;
     font-size: 1.12rem;
-    color: #BDEBEA;
+    color: #1F2626;
     font-family: "Montserrat", sans-serif;
-    border-left: 5px solid #76ABAE;
+    border-left: 5px solid #5222D0;
     padding-left: 1.25rem;
     cursor: text;
 `

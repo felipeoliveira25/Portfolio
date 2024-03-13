@@ -9,11 +9,11 @@ export const DivLogo = styled.div`
 
 export const LogoTexto = styled.h3`
     font-size: 20px;
-    color: #EEEEEE;
+    color: #1F2626;
     font-family: "Montserrat", sans-serif;
     cursor: pointer;
 `
 
 export const LogoPersonalizada = styled.span`
-    color: #76ABAE;
+    color: #5222D0;
 `

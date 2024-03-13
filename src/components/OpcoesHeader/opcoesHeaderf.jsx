@@ -1,4 +1,4 @@
-import { Lista, Opcao } from './style'
+import { Lista, Opcao, BotaoDarkMode } from './style'
 import { Botao } from '../Botao'
 
 
@@ -9,7 +9,8 @@ function OpcoesHeader(){
             <Opcao>Home</Opcao>
             <Opcao>Projetos</Opcao>
             <Opcao>Skills</Opcao>
-            <Botao cor="#31363F">Contato</Botao>
+            <Botao cor="#DBFFFF" >Contato</Botao>
+            <BotaoDarkMode type='checkbox'></BotaoDarkMode>
         </Lista>
     )
 }

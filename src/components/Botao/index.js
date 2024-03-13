@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 
 export const Botao = styled.a`
-    background-color: ${props => props.backgroundColor || '#76ABAE'};
+    
+    background-color: ${props => props.backgroundColor || '#5222D0'};
     border-radius: 5px;
     border: none;
     margin: ${props => props.margin};
@@ -11,7 +12,7 @@ export const Botao = styled.a`
     padding:${props => props.padding || '10px'};
     color: ${props => props.cor || '#EEEEEE'};
     font-size: ${props => props.fontSize || '16px'};
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
     white-space:nowrap;
     text-decoration:none;
@@ -22,7 +23,7 @@ export const Botao = styled.a`
     gap: 5px;
 
     &:hover{
-        background-color: #cfcfcf;
+        background-color: #653ad3;
         
         
     }
