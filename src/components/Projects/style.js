@@ -13,6 +13,7 @@ export const ProjetosContainer = styled.div`
     justify-content:center;
     align-items: center;
     width: 100vw;
+    height:100%;
   
 `
 

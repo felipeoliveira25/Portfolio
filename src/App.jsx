@@ -10,19 +10,18 @@ const AppContainer = styled.div`
 `
 
 
-function App(){
+function App() {
   return (
-    
-    <AppContainer>
-      <Header/>
-      <DescricaoInicial/>
-      <SobreMim/>
-      <Projetos/>
-      <Skills/>
-      <Footer/>
+    <AppContainer id='home'>
+      <Header />
+      <DescricaoInicial />
+      <SobreMim  />
+      <Projetos />
+      <Skills  />
+      <Footer />
     </AppContainer>
-   
-  )
+  );
 }
+
 
 export default App

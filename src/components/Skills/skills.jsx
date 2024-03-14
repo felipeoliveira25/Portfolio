@@ -17,7 +17,7 @@ function Skills(){
     ]
 
     return(
-        <ContainerSkills>
+        <ContainerSkills id='skills'>
             <Titulo width="70%" marginLeft="150px">Skills</Titulo>
             <DivSkills>
                 {skills.map((skill)=>(

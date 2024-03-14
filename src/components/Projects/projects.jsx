@@ -17,7 +17,7 @@ function Projetos(){
     
   
     return(
-        <ProjetosContainer>
+        <ProjetosContainer id='projetos'>
             <Titulo width="65%" marginLeft="67px">Projetos</Titulo>
 
             
@@ -31,7 +31,7 @@ function Projetos(){
                                         <Descricao>{projeto.descricao}</Descricao>
                                         <BotoesContainer>
                                                     {projeto.links && projeto.links.map((link, index)=>(
-                                                        <Botao display='flex'  cor="#DBFFFF"  fontSize="15px" href={link} key={index}>
+                                                        <Botao display='flex' target="_blank"  cor="#DBFFFF"  fontSize="15px" href={link} key={index}>
                                                             {index === 0 && (
                                                                 <>
                                                                     <img src='images/imgs-btns-cards/github.svg'></img>
