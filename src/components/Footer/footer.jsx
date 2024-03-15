@@ -1,4 +1,5 @@
 import { FooterContainer, LinksSociais, LinkSocial, NomeLink, LinksGerais, LinkGeral, TituloFinal } from "./style"
+import { Link } from 'react-scroll'
 
 function Footer(){
 
@@ -20,8 +21,12 @@ function Footer(){
             ))}
             </LinksSociais>
             <LinksGerais>
-                <LinkGeral>Projetos</LinkGeral>
-                <LinkGeral>Contato</LinkGeral>
+                <LinkGeral>
+                <Link to='projetos' spy={true} smooth={true} offset={-100} duration={500}>Projetos</Link>
+                </LinkGeral>
+                <LinkGeral>
+                <Link to='contato' spy={true} smooth={true} offset={-100} duration={500}>Contato</Link>
+                </LinkGeral>
             </LinksGerais>
             <TituloFinal>Web Developer 2024</TituloFinal>
             
