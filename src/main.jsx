@@ -11,6 +11,8 @@ body{
   overflow-x: hidden;
   background-color: #FAFAFA;
   scroll-behavior: smooth;
+  width: 100%;
+  height: 100vh;
 } 
 
 li{

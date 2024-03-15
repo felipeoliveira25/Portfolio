@@ -10,7 +10,7 @@ function DescricaoInicial(){
                 <TituloProfissao>WEB DEVELOPER</TituloProfissao>
                 <MeuNome>Felipe Oliveira</MeuNome>
                 <Descricao>
-                Olá! Sou um Desenvolvedor Front-End, apaixonado por criar soluções inovadoras e eficientes por meio do poder do código.
+                Olá! Sou um desenvolvedor Front-End que adora explorar novas tecnologias e está sempre sedento por conhecimento. Meu intuito é criar experiências digitais cativantes e estou constantemente buscando aprender e me aprimorar nesse processo.
                 </Descricao>
                 <Botao cor="#DBFFFF" padding="15px" fontSize="15px">
                 <Link to='contato' spy={true} smooth={true} offset={-100} duration={500}>Entre em Contato</Link>

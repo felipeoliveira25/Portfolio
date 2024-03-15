@@ -1,11 +1,13 @@
 import { HeaderDiv } from './style'
-import {  LogoTexto, LogoPersonalizada } from './style'
+import {  LogoTexto, LogoPersonalizada, BotaoMenu } from './style'
 import { Lista, Opcao } from './style'
 import { Botao } from '../Botao'
 import { Link } from 'react-scroll'
 
 
+
 function Header(){
+  
     return(
         
         <HeaderDiv>
@@ -23,8 +25,10 @@ function Header(){
                     <Botao cor="#DBFFFF">
                     <Link to='contato' spy={true} smooth={true} offset={-100} duration={500}>Contato</Link>
                     </Botao>
-                    
                 </Lista>
+                <BotaoMenu onClick={() => {}}>
+                    <img src="images/menu.svg" alt="" />
+                </BotaoMenu>
         </HeaderDiv>
           
         

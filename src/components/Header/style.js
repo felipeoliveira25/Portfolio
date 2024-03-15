@@ -10,12 +10,28 @@ export const HeaderDiv = styled.header`
     z-index: 2;
     top: 0;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    @media (max-width: 1024px) {
+        padding: 0 2rem;
+        justify-content: center;
+        position: fixed;
+        
+    }
+    @media (max-width: 1440px) {
+        padding: 0 2rem;
+        justify-content: center;
+        position: fixed;
+        gap: -20rem;
+    }
+    @media (max-width: 777px) {
+        background-color: red;
+        width: 100vw;
+    }
+
+
+   
 `
 
-export const DivLogo = styled.div`
-    display: flex;
-    margin-left: 40px;
-`
 
 export const LogoTexto = styled.a`
     font-size: 20px;
@@ -24,6 +40,13 @@ export const LogoTexto = styled.a`
     cursor: pointer;
     font-weight: 700;
     text-decoration: none;
+    width: 30vw;
+    
+
+    @media (max-width: 1024px) {
+        margin-right: -8rem;
+        margin-left: -10rem;
+    }
 `
 
 export const LogoPersonalizada = styled.span`
@@ -37,6 +60,15 @@ export const Lista = styled.ul`
     gap: 70px;
     justify-content: center;
     align-items: center;
+    @media (max-width: 637px){
+        display: none;
+        ;
+    }
+    @media (max-width: 1024px) {
+        gap: 50px;
+        margin-left: 5rem;
+        margin-right: -7rem;
+    }
 `
 export const Opcao = styled.li`
     cursor: pointer;
@@ -46,4 +78,26 @@ export const Opcao = styled.li`
     &:hover{
         border-bottom: 1px solid #5222D0 ;
     }
+`
+export const BotaoMenu = styled.button`
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.4rem;
+    color: #1F2626;
+    background-color: transparent;
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: none;
+
+    @media (max-width: 637px){
+        display: flex;
+        
+    }
+
 `
