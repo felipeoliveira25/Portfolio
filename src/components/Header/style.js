@@ -47,7 +47,3 @@ export const Opcao = styled.li`
         border-bottom: 1px solid #5222D0 ;
     }
 `
-
-export const BotaoDarkMode = styled.input`
-
-`

@@ -3,9 +3,9 @@ import { FooterContainer, LinksSociais, LinkSocial, NomeLink, LinksGerais, LinkG
 function Footer(){
 
     const links = [
-        {id: '1', url:'', img:'images/imgs-sociais/whatsapp.svg', nome:'WHATSAPP'},
-        {id: '2', url:'', img:'images/imgs-sociais/icon-linkedin.svg', nome:'LINKEDIN'},
-        {id: '3', url:'', img:'images/imgs-sociais/icon-git.svg', nome:'GITHUB'},
+        {id: '1', url:'https://wa.me/5515991853427', img:'images/imgs-sociais/whatsapp.svg', nome:'WHATSAPP'},
+        {id: '2', url:'https://www.linkedin.com/in/felipeoliveira25/', img:'images/imgs-sociais/icon-linkedin.svg', nome:'LINKEDIN'},
+        {id: '3', url:'https://github.com/felipeoliveira25', img:'images/imgs-sociais/icon-git.svg', nome:'GITHUB'},
     ]
 
     return(
@@ -13,7 +13,7 @@ function Footer(){
             <LinksSociais >
             {links.map((link)=> (
                 
-                <LinkSocial key={link.id} href={link.url}>
+                <LinkSocial key={link.id} href={link.url} target="_blank">
                     <img src={link.img}></img>
                     <NomeLink>{link.nome}</NomeLink>
                 </LinkSocial>

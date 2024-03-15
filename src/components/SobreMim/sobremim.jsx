@@ -6,7 +6,7 @@ function SobreMim(){
     return(
         <DivAboutMe>
             <Title>About me</Title>
-            <Paragraph>The long barrow was built on land previously inhabited in the Mesolithic period. It consisted of a sub-rectangular earthen tumulus, estimated to have been 15 metres (50 feet) in length, with a chamber built from sarsen megaliths on its eastern end. Both inhumed and cremated human remains were placed within this chamber during the Neolithic period, representing at least nine or ten individuals.</Paragraph>
+            <Paragraph>Atualmente no 3º período do curso de Sistemas para Internet na Universidade Católica de Pernambuco, trago habilidades sólidas em React.js, JavaScript, Java, Node.js, Express e MySQL. Estou comprometido em me manter atualizado com as últimas tendências e práticas de desenvolvimento, buscando constantemente expandir meu conhecimento e habilidades para enfrentar desafios de maneira eficaz e criativa.</Paragraph>
         </DivAboutMe>
     )
 }

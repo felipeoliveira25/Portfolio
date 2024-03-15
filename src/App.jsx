@@ -3,6 +3,7 @@ import DescricaoInicial from './components/DescricaoInicial/descricaoinicial'
 import SobreMim from './components/SobreMim/sobremim'
 import Projetos from './components/Projects/projects'
 import Skills from './components/Skills/skills'
+import Contato from './components/Contato/contato'
 import Footer from './components/Footer/footer'
 import styled from 'styled-components'
 
@@ -18,6 +19,7 @@ function App() {
       <SobreMim  />
       <Projetos />
       <Skills  />
+      <Contato/>
       <Footer />
     </AppContainer>
   );

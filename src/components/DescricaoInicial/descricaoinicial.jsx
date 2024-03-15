@@ -1,5 +1,6 @@
 import { DivInicial, DivTextos, MeuNome, TituloProfissao, Descricao, DivImg, ImagemBanner, ImagemSeta } from './style'
 import { Botao } from '../Botao'
+import { Link } from 'react-scroll'
 
 
 function DescricaoInicial(){
@@ -9,9 +10,11 @@ function DescricaoInicial(){
                 <TituloProfissao>WEB DEVELOPER</TituloProfissao>
                 <MeuNome>Felipe Oliveira</MeuNome>
                 <Descricao>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi suscipit assumenda voluptatem. Reprehenderit ipsum enim tempore mollitia iusto rem a consequatur quam repellat voluptas! Dolorem ullam harum nam quod?
+                Olá! Sou um Desenvolvedor Front-End, apaixonado por criar soluções inovadoras e eficientes por meio do poder do código.
                 </Descricao>
-                <Botao cor="#DBFFFF" padding="15px" fontSize="15px">Entre em Contato</Botao>
+                <Botao cor="#DBFFFF" padding="15px" fontSize="15px">
+                <Link to='contato' spy={true} smooth={true} offset={-100} duration={500}>Entre em Contato</Link>
+                </Botao>
             </DivTextos>
                 
            

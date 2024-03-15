@@ -1,6 +1,6 @@
 import { HeaderDiv } from './style'
 import {  LogoTexto, LogoPersonalizada } from './style'
-import { Lista, Opcao, BotaoDarkMode } from './style'
+import { Lista, Opcao } from './style'
 import { Botao } from '../Botao'
 import { Link } from 'react-scroll'
 
@@ -20,8 +20,10 @@ function Header(){
                     <Opcao>
                     <Link to='skills' spy={true} smooth={true} offset={-100} duration={500}>Skills</Link>
                     </Opcao>
-                    <Botao cor="#DBFFFF" >Contato</Botao>
-                    <BotaoDarkMode type='checkbox'></BotaoDarkMode>
+                    <Botao cor="#DBFFFF">
+                    <Link to='contato' spy={true} smooth={true} offset={-100} duration={500}>Contato</Link>
+                    </Botao>
+                    
                 </Lista>
         </HeaderDiv>
           
