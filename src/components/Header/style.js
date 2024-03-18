@@ -24,8 +24,10 @@ export const HeaderDiv = styled.header`
         gap: -20rem;
     }
     @media (max-width: 777px) {
-        background-color: red;
         width: 100vw;
+    }
+    @media (max-width: 680px) {
+        width: 680px;
     }
 
 
@@ -60,9 +62,9 @@ export const Lista = styled.ul`
     gap: 70px;
     justify-content: center;
     align-items: center;
-    @media (max-width: 637px){
+    @media (max-width: 425px){
         display: none;
-        ;
+        
     }
     @media (max-width: 1024px) {
         gap: 50px;
@@ -83,8 +85,8 @@ export const BotaoMenu = styled.button`
     width: 2.5rem;
     height: 2.5rem;
     font-size: 1.5rem;
-    display: flex;
-    align-items: center;
+    
+    align-items: flex-end;
     justify-content: center;
     border: none;
     border-radius: 0.4rem;
@@ -95,9 +97,10 @@ export const BotaoMenu = styled.button`
     transition: all 0.4s ease;
     display: none;
 
-    @media (max-width: 637px){
-        display: flex;
+     @media (max-width: 425px){
+        display: block;
+        margin-left: 25rem;
         
-    }
+    } 
 
 `
