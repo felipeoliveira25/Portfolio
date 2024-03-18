@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const HeaderDiv = styled.header`
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 15rem;
     align-items: center;
     background-color: #FAFAFA;
     position: fixed;
@@ -12,24 +13,28 @@ export const HeaderDiv = styled.header`
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     @media (max-width: 1024px) {
-        padding: 0 2rem;
-        justify-content: center;
-        position: fixed;
+        gap: 4rem;
         
     }
-    @media (max-width: 1440px) {
-        padding: 0 2rem;
-        justify-content: center;
-        position: fixed;
-        gap: -20rem;
+    @media (max-width: 882px) {
+        width: 100%;
+        gap: 0.5rem;
     }
-    @media (max-width: 777px) {
-        width: 100vw;
+   
+    @media (max-width: 520px){
+        width: 100%;
+        gap: 0;
+        justify-content: flex-start;
+        padding-left: 5rem;
     }
-    @media (max-width: 680px) {
-        width: 680px;
+    @media (max-width: 420px){
+        gap: 0;
+        padding-left: 0;
+        justify-content: space-around;
+        width: 100%;
+        height: 5rem;
     }
-
+   
 
    
 `
@@ -42,12 +47,11 @@ export const LogoTexto = styled.a`
     cursor: pointer;
     font-weight: 700;
     text-decoration: none;
-    width: 30vw;
-    
 
-    @media (max-width: 1024px) {
-        margin-right: -8rem;
-        margin-left: -10rem;
+
+
+    @media (max-width: 420px){
+        font-size: 25px;
     }
 `
 
@@ -59,15 +63,16 @@ export const Lista = styled.ul`
     list-style: none;
     font-family: "Montserrat", sans-serif;
     color: #1F2626;
-    gap: 70px;
+    gap: 4.38rem;
     justify-content: center;
     align-items: center;
-    @media (max-width: 425px){
+    @media (max-width: 420px){
         display: none;
+        width: 100%;
         
     }
     @media (max-width: 1024px) {
-        gap: 50px;
+        gap: 3.12rem;
         margin-left: 5rem;
         margin-right: -7rem;
     }
@@ -97,9 +102,12 @@ export const BotaoMenu = styled.button`
     transition: all 0.4s ease;
     display: none;
 
-     @media (max-width: 425px){
+     @media (max-width: 420px){
         display: block;
-        margin-left: 18rem;
+        
+        
+        
+      
         
     } 
 
