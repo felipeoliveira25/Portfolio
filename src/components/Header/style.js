@@ -99,7 +99,7 @@ export const BotaoMenu = styled.button`
 
      @media (max-width: 425px){
         display: block;
-        margin-left: 25rem;
+        margin-left: 18rem;
         
     } 
 
