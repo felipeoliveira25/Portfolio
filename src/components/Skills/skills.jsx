@@ -1,5 +1,5 @@
-import { ContainerSkills, DivSkills, Skill, ImgSkill, NameSkill } from './style'
-import { Titulo } from '../Titulo'
+import { ContainerSkills, DivSkills, Skill, ImgSkill, NameSkill, TituloSkills } from './style'
+
 
 
 function Skills(){
@@ -18,7 +18,7 @@ function Skills(){
 
     return(
         <ContainerSkills id='skills'>
-            <Titulo width="70%" marginLeft="150px">Skills</Titulo>
+            <TituloSkills width="70%" marginLeft="150px">Skills</TituloSkills>
             <DivSkills>
                 {skills.map((skill)=>(
                         <Skill key={skill.id}>

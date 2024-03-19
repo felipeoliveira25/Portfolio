@@ -1,7 +1,23 @@
 import styled from "styled-components";
 
 
+export const TituloProjetos = styled.h2`
+    font-size: 1.5rem;
+    color: #151717;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    width:80%;
+    word-break: keep-all;
+    display: flex;
+    justify-content: center;
+    
 
+    @media (max-width: 882px){
+        width: 80%;
+        
+    }
+`
 export const SubTitulo = styled.h3`
     font-family: "Montserrat", sans-serif;
     font-size: 29px
@@ -14,6 +30,17 @@ export const ProjetosContainer = styled.div`
     align-items: center;
     width: 100vw;
     height:100%;
+
+    @media (max-width: 680px){
+        width: 100%;
+        margin-top: 8rem;
+        margin-left: 1rem;
+        
+       
+    }
+    @media (max-width: 430px){
+        margin-left: 3rem;
+    }
   
 `
 
@@ -31,12 +58,10 @@ export const CardProjeto = styled.div`
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     height:20.75rem;
 
-    // &:hover{
-    //     transform: translateY(-5px);
-    //     transition: all;
-    //     cursor: pointer;
-    //     transition: all 0.3s ease;
-    // }
+    @media (max-width: 680px){
+        flex-direction: column;
+        width: 100%;
+    }
     
 `
 export const Imagem = styled.img`
@@ -99,6 +124,35 @@ export const Setas = styled.div`
     gap: 5rem;
     width: 100%;
     
+`
+export const BotaoSite = styled.a`
+      
+    background-color: #5222D0;
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        color: #DBFFFF;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        white-space:nowrap;
+        text-decoration:none;
+        font-family: "Montserrat", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        &:hover{
+            background-color: #653ad3;
+            
+            
+        }
+
+        @media (max-width: 430px){
+            padding: 0.3rem;
+            margin-top: 1rem;
+    }
 `
 
 

@@ -1,6 +1,5 @@
-import { DivContato,Form, DivInput, Label, Input } from "./style";
+import { DivContato,Form, DivInput, Label, Input, TituloContato, BotaoContato } from "./style";
 import emailjs from '@emailjs/browser'
-import { Titulo } from '../Titulo'
 import { useState } from "react";
 
 function Contato(){
@@ -35,7 +34,7 @@ function Contato(){
 
     return(
         <DivContato id="contato">
-            <Titulo width="65%" marginLeft="67px">Contato</Titulo>
+            <TituloContato >Contato</TituloContato>
               <Form onSubmit={enviarEmail}>
                 <DivInput>
                     <Label>Nome *</Label>
@@ -67,7 +66,7 @@ function Contato(){
                     onChange={(e) => setMensagem(e.target.value)}
                     paddingBottom="8rem"/>
                 </DivInput>
-                    <Input type="submit" value="Enviar Mensagem"></Input>
+                    <BotaoContato type="submit" value="Enviar Mensagem"></BotaoContato>
             </Form>
         </DivContato>
       

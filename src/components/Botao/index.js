@@ -12,7 +12,7 @@ export const Botao = styled.a`
     padding:${props => props.padding || '10px'};
     color: ${props => props.cor || '#EEEEEE'};
     font-size: ${props => props.fontSize || '16px'};
-    font-weight: 400;
+    font-weight: 500;
     cursor: pointer;
     white-space:nowrap;
     text-decoration:none;

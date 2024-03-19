@@ -28,7 +28,7 @@ function Footer(){
                 <Link to='contato' spy={true} smooth={true} offset={-100} duration={500}>Contato</Link>
                 </LinkGeral>
             </LinksGerais>
-            <TituloFinal>Web Developer 2024</TituloFinal>
+            <TituloFinal>Felipe Oliveira 2024</TituloFinal>
             
         </FooterContainer>
     )

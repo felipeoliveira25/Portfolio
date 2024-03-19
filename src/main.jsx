@@ -13,6 +13,8 @@ body{
   scroll-behavior: smooth;
   width: 100vw;
   height: 100vh;
+
+  
 } 
 
 li{

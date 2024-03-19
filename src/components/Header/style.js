@@ -8,7 +8,7 @@ export const HeaderDiv = styled.header`
     background-color: #FAFAFA;
     position: fixed;
     width: 100vw;
-    z-index: 2;
+    z-index: 4;
     top: 0;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
@@ -21,13 +21,13 @@ export const HeaderDiv = styled.header`
         gap: 0.5rem;
     }
    
-    @media (max-width: 520px){
+    @media (max-width: 626px){
         width: 100%;
         gap: 0;
         justify-content: flex-start;
-        padding-left: 5rem;
+        padding-left: 3.8rem;
     }
-    @media (max-width: 420px){
+    @media (max-width: 560px){
         gap: 0;
         padding-left: 0;
         justify-content: space-around;
@@ -50,7 +50,7 @@ export const LogoTexto = styled.a`
 
 
 
-    @media (max-width: 420px){
+    @media (max-width: 560px){
         font-size: 25px;
     }
 `
@@ -66,7 +66,7 @@ export const Lista = styled.ul`
     gap: 4.38rem;
     justify-content: center;
     align-items: center;
-    @media (max-width: 420px){
+    @media (max-width: 560px){
         display: none;
         width: 100%;
         
@@ -102,7 +102,7 @@ export const BotaoMenu = styled.button`
     transition: all 0.4s ease;
     display: none;
 
-     @media (max-width: 420px){
+     @media (max-width: 560px){
         display: block;
         
         

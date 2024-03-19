@@ -1,6 +1,6 @@
-import {ProjetosContainer, CardProjeto, Imagem, DivTexto, Descricao, BotoesContainer} from './style'
+import {ProjetosContainer,TituloProjetos, CardProjeto, Imagem, DivTexto, Descricao, BotoesContainer, BotaoSite} from './style'
 import { Titulo } from '../Titulo'
-import { Botao } from '../Botao'
+
 
 
 function Projetos(){
@@ -18,7 +18,7 @@ function Projetos(){
   
     return(
         <ProjetosContainer id='projetos'>
-            <Titulo width="65%" marginLeft="67px">Projetos</Titulo>
+            <TituloProjetos width="65%" marginLeft="67px">Projetos</TituloProjetos>
 
             
           
@@ -31,7 +31,7 @@ function Projetos(){
                                         <Descricao>{projeto.descricao}</Descricao>
                                         <BotoesContainer>
                                                     {projeto.links && projeto.links.map((link, index)=>(
-                                                        <Botao display='flex' target="_blank"  cor="#DBFFFF"  fontSize="15px" href={link} key={index}>
+                                                        <BotaoSite target="_blank"  href={link} key={index}>
                                                             {index === 0 && (
                                                                 <>
                                                                     <img src='images/imgs-btns-cards/github.svg'></img>
@@ -44,7 +44,7 @@ function Projetos(){
                                                                     Vercel
                                                                 </>
                                                             )}
-                                                        </Botao>
+                                                        </BotaoSite>
                                                     ))}
                                                 
                                         </BotoesContainer>

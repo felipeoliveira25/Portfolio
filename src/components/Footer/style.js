@@ -8,6 +8,10 @@ export const FooterContainer = styled.div`
     align-items: center;
     text-align: center;
     margin-top: 9rem;
+
+    @media (max-width: 430px){
+        margin-left: 3rem;
+    }
 `
 export const LinksSociais = styled.div`
     display: flex;
