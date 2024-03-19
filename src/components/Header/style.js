@@ -104,6 +104,7 @@ export const BotaoMenu = styled.button`
 
      @media (max-width: 560px){
         display: block;
+        margin-left: 5rem;
         
         
         
