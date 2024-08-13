@@ -5,14 +5,14 @@ import { ContainerSkills, DivSkills, Skill, ImgSkill, NameSkill, TituloSkills } 
 function Skills(){
 
     const skills = [
-        {id: '1', img: 'images/imgs-skills/html5.svg', nome: 'HTML' },
-        {id: '2', img: 'images/imgs-skills/css3-alt.svg', nome: 'CSS' },
-        {id: '3', img: 'images/imgs-skills/icon-javascript.png', nome: 'JAVASCRIPT' },
         {id: '4', img: 'images/imgs-skills/icon-react.png', nome: 'REACT.JS' },
-        {id: '5', img: 'images/imgs-skills/node-js.svg', nome: 'NODE.JS' },
         {id: '6', img: 'images/imgs-skills/img-express.png', nome: 'EXPRESS.JS' },
-        {id: '7', img: 'images/imgs-skills/mysql.svg', nome: 'MYSQL' },
+        {id: '5', img: 'images/imgs-skills/node-js.svg', nome: 'NODE.JS' },
+        {id: '3', img: 'images/imgs-skills/icon-javascript.png', nome: 'JAVASCRIPT' },
+        {id: '7', img: 'images/imgs-skills/mongodb.svg', nome: 'MONGODB' },
+        {id: '1', img: 'images/imgs-skills/img-ts.png', nome: 'TYPESCRIPT' },
         {id: '8', img: 'images/imgs-skills/icon-git.png', nome: 'GIT' },
+        {id: '10', img: 'images/imgs-skills/img-tw.svg', nome: 'TAILWIND' },
         {id: '9', img: 'images/imgs-skills/icon-styled.png', nome: 'STYLED COMPONENTS' },
     ]
 
